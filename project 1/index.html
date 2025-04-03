@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: "Roboto", sans-serif;;
+    }
+    body{
+      background: #d6e1f0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+    .box{
+      background: #ffffff;
+      border-radius: 20px;
+      border: 2px solid black;
+      width: 18vw;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    .box img {
+      width: 18vw;
+      height: 35vh;
+      border-radius: 10px;
+    }
+    h2{
+      font-size: 22px;
+      color: hsl(218, 44%, 22%);
+      padding: 0 10px;
+      text-align: center;
+      font-weight: 700;
+    }
+    h3{
+      font-size: 15px;
+      font-weight: 400;
+      color: hsl(220, 15%, 55%);
+      padding: 0 17.3px;
+      text-align: center;
+      margin-bottom: 20px;
+
+    }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    @media screen and (max-width: 375px) {
+      .box{
+        width: 70vw;
+        height: 60vh;
+      }
+      .box img {
+        width: 70vw;
+        height: 40vh;
+      }
+      h2{
+        font-size: 18px;
+        padding: 0 20px;
+      }
+      h3{
+        font-size: 14px;
+      }
+      
+    }
+    @media (min-width: 375px){
+      .box{
+        width: 250px;
+        height: 400px;
+      }
+      .box img {
+        width: 250px;
+        /* height: 40vh; */
+      }
+      h2{
+        font-size: 18px;
+      }
+      h3{
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <img src="images/image-qr-code.png" alt="qr_code">
+    <h2>Improve your front-end skills by building projects</h2>  
+    <h3>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</h3>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.linkedin.com/in/yogeshjoshi13" target="_blank" rel="noopener noreferrer">Yogesh Joshi</a>.
+  </div>
+</body>
+
+</html>
